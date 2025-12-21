@@ -5,7 +5,6 @@ import { AppContext } from '../context/AppContext'
 
 const Hero = () => {
     const { handleScroll } = useContext(AppContext)
-
     return (
         <div className='w-full overflow-hidden p-5 md:p-10 md:px-15 bg-[#151825] h-screen' >
             <Navbar />
