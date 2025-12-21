@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Lenis from 'lenis'
 import Hero from './component/Hero'
-import About from './pages/about'
+import About from "./pages/About"
 import Service from './pages/Service'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
