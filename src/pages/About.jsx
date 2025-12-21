@@ -2,7 +2,7 @@ import React from 'react'
 import assets from '../assets/assets'
 const About = ({id}) => {
     return (
-        <div id={id} className='overflow-hidden w-screen min-h-screen flex justify-center items-center overflow-hidden bg-[#313849]' >
+        <div id={id} className='overflow-hidden w-screen min-h-screen flex justify-center items-center bg-[#313849]' >
             <div className='flex flex-col gap-10 2xl:gap-20  md:flex-row w-full  h-fit justify-center items-center' >
                 <div className='h-1/2 w-fit  bg-[#313849] flex justify-center items-center' >
                     <div className='md:h-[25vw] h-50 md:w-[26vw] w-50 relative border-8 md:border-12 border-[#00d8ff] shadow-[0_0_40px_10px_rgba(0,216,255,0.7)] shadow-[#00d8ff] rounded-full' >
@@ -12,7 +12,9 @@ const About = ({id}) => {
                 <div className='h-1/2 w-full  md:w-[40vw] ' >
                     <h1 className='text-center md:text-start font-bold text-3xl md:text-[3vw] text-white md:leading-[3vw]' >About <span className='text-[#00d8ff]' >Me</span></h1>
                     <h1 className='text-center md:text-start font-bold text-2xl md:text-[2vw]  md:leading-[3vw] text-white' >Full Stack Web Developer</h1>
-                    <p className='mt-7 text-lg text-white px-5 md:px-0' >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed unde voluptates ipsa quos, corrupti laudantium facilis aspernatur, nesciunt iure repellat vero perferendis deleniti incidunt architecto ipsam, voluptatem doloribus atque velit molestias qui cum optio obcaecati. Fuga nesciunt, non placeat dolorem veritatis sit expedita omnis ipsam accusantium in. Voluptatem, officiis nihil.</p>
+                    <p className='mt-7 text-lg text-white px-5 md:px-0' >Hi, I’m Ali Nawaz, a passionate Web Developer dedicated to helping businesses and individuals establish a strong online presence. I specialize in custom website development, creating sites that are not only visually appealing but also fast, responsive, and SEO-friendly.
+
+With a focus on user experience, modern design, and clean code, I turn ideas into functional websites that drive results. Whether it’s a business website, e-commerce store, portfolio, or landing page, I work closely with my clients to bring their vision to life.</p>
                 </div>
             </div>
         </div>
