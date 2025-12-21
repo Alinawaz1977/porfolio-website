@@ -5,16 +5,15 @@ import { useNavigate } from 'react-router-dom'
 const Projects = ({id}) => {
     const navigate = useNavigate(null)
     return (
-        <div id={id} className='overflow-hidden min-h-screen  w-screen flex flex-col justify-center overflow-hidden  items-center bg-[#313849]' >
+        <div id={id} className='overflow-hidden min-h-screen  w-screen flex flex-col justify-center  items-center bg-[#313849]' >
             <h1 className='text-3xl text-white md:text-[4vw] font-bold text-center py-10' >Our <span className='text-center text-[#00d8ff]' >Projects</span></h1>
             <div className='flex  flex-col mx-5 md:mx-0 md:flex-row gap-5' >
-                <div className="w-[90vw] group relative mx-auto h-[25vh] md:w-[30vw] md:h-[40vh] text-white rounded-md overflow-hidden">
+                <div onClick={() => navigate('https://foreverfrontend-phi.vercel.app/')} className="w-[90vw] group relative mx-auto h-[25vh] md:w-[30vw] md:h-[40vh] text-white rounded-md overflow-hidden">
                     <img
                         className="w-full h-full object-cover object-top rounded-md transition-transform duration-200 group-hover:scale-105 cursor-pointer"
                         src={assets.project1}
                         alt=""
                     />
-
                     <div
                         className="
                         absolute inset-0
@@ -37,7 +36,7 @@ const Projects = ({id}) => {
                     </div>
 
                 </div>
-                <div className="w-[90vw] group relative mx-auto h-[25vh] md:w-[30vw] md:h-[40vh] text-white rounded-md overflow-hidden">
+                <div onClick={() => navigate('https://doctorfrontend-eight.vercel.app/')} className="w-[90vw] group relative mx-auto h-[25vh] md:w-[30vw] md:h-[40vh] text-white rounded-md overflow-hidden">
 
                     <img
                         className="w-full h-full object-cover object-top rounded-md transition-transform duration-200 group-hover:scale-105 cursor-pointer"
@@ -67,7 +66,7 @@ const Projects = ({id}) => {
                     </div>
 
                 </div>
-                <div className="w-[90vw]  group relative mx-auto h-[25vh] md:w-[30vw] md:h-[40vh] text-white rounded-md overflow-hidden">
+                <div onClick={() => navigate('https://blog-application-six-rust.vercel.app/')} className="w-[90vw]  group relative mx-auto h-[25vh] md:w-[30vw] md:h-[40vh] text-white rounded-md overflow-hidden">
 
                     <img
                         className="w-full h-full object-cover object-top rounded-md transition-transform duration-200 group-hover:scale-105 cursor-pointer"

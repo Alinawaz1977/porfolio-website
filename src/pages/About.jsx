@@ -12,9 +12,7 @@ const About = ({id}) => {
                 <div className='h-1/2 w-full  md:w-[40vw] ' >
                     <h1 className='text-center md:text-start font-bold text-3xl md:text-[3vw] text-white md:leading-[3vw]' >About <span className='text-[#00d8ff]' >Me</span></h1>
                     <h1 className='text-center md:text-start font-bold text-2xl md:text-[2vw]  md:leading-[3vw] text-white' >Full Stack Web Developer</h1>
-                    <p className='mt-7 text-lg text-white px-5 md:px-0' >Hi, I’m Ali Nawaz, a passionate Web Developer dedicated to helping businesses and individuals establish a strong online presence. I specialize in custom website development, creating sites that are not only visually appealing but also fast, responsive, and SEO-friendly.
-
-With a focus on user experience, modern design, and clean code, I turn ideas into functional websites that drive results. Whether it’s a business website, e-commerce store, portfolio, or landing page, I work closely with my clients to bring their vision to life.</p>
+                    <p className='mt-7 text-lg text-white px-5 md:px-0' >Hi, I’m Ali Nawaz, a passionate Web Developer dedicated to helping businesses and individuals establish a strong online presence. I specialize in custom website development, creating sites that are not only visually appealing but also fast, responsive, and SEO-friendly.</p>
                 </div>
             </div>
         </div>

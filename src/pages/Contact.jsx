@@ -39,7 +39,7 @@ const Contact = ({ id }) => {
           <input name='user_email' className='px-5 rounded-md bg-gray-700 w-full text-white md:w-[30vw] py-2' placeholder='Email Address' type="email" required />
         </div>
         <div>
-          <textarea name='message' className='text-white w-[61.3vw] h-[40vh] bg-gray-700 rounded-md px-5 pt-2 outline-none' placeholder='Your Message'></textarea>
+          <textarea name='message' className='text-white w-full md:w-[61.3vw] h-[40vh] bg-gray-700 rounded-md px-5 pt-2 outline-none' placeholder='Your Message'></textarea>
         </div>
       </div>
       {isSubmitting ? (
