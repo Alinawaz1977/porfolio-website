@@ -18,7 +18,7 @@ const Hero = () => {
                 </div>
                 <div className='md:w-[40vw] items-center h-1/2 flex justify-center ' >
                     <div className='md:h-[25vw] h-60 md:w-[26vw] w-60 relative bg-[#00d8ff] shadow-[0_0_40px_10px_rgba(0,216,255,0.7)] shadow-[#00d8ff] rounded-full' >
-                        <img className='md:w-[36vw]  md:h-[33vw] h-80 w-80 -top-20 md:-top-[7.5vw] object-cover absolute  rounded-full ' src={assets.myImage} alt="" />
+                        <img loading="lazy className='md:w-[36vw]  md:h-[33vw] h-80 w-80 -top-20 md:-top-[7.5vw] object-cover absolute  rounded-full ' src={assets.myImage} alt="" />
                     </div>
                 </div>
             </div>
