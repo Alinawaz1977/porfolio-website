@@ -6,7 +6,7 @@ const About = ({id}) => {
             <div className='flex flex-col gap-10 2xl:gap-20  md:flex-row w-full  h-fit justify-center items-center' >
                 <div className='h-1/2 w-fit  bg-[#313849] flex justify-center items-center' >
                     <div className='md:h-[25vw] h-50 md:w-[26vw] w-50 relative border-8 md:border-12 border-[#00d8ff] shadow-[0_0_40px_10px_rgba(0,216,255,0.7)] shadow-[#00d8ff] rounded-full' >
-                        <img className='md:w-[34vw]  md:h-[30vw] h-65 w-65 -top-20 md:-top-[7vw] 2xl:-top-[6vw] object-cover absolute  rounded-full' src={assets.myImage} alt="myImage" />
+                        <img loading='lazy' className='md:w-[34vw]  md:h-[30vw] h-65 w-65 -top-20 md:-top-[7vw] 2xl:-top-[6vw] object-cover absolute  rounded-full' src={assets.myImage} alt="myImage" />
                     </div>
                 </div>
                 <div className='h-1/2 w-full  md:w-[40vw] ' >
