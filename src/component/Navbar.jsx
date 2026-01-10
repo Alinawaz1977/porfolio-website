@@ -25,7 +25,7 @@ const Navbar = () => {
                     <div className='w-7 h-0.5 bg-white ' ></div>
                 </div>
 
-                <div className={`fixed  top-0 ${menu ? "right-[-0%]" : "right-[-15%]"} text-center  flex justify-center items-center z-20 bg-[#151825] transition-all duration-300 ease-in-out ${menu ? "w-full h-screen" : "w-0 h-screen"}`}>
+                <div className={`fixed  top-0 ${menu ? "right-[-0%]" : "right-[-20%]"} text-center  flex justify-center items-center z-20 bg-[#151825] transition-all duration-300 ease-in-out ${menu ? "w-full h-screen" : "w-0 h-screen"}`}>
                     <ul>
                         <li onClick={() => {
                             handleScroll("home");
