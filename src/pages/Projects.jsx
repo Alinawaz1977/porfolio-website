@@ -1,14 +1,45 @@
 import React from 'react'
 import assets from '../assets/assets'
 import { useNavigate } from 'react-router-dom'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 
-const Projects = ({id}) => {
+const Projects = ({ id }) => {
     const navigate = useNavigate(null)
+
+
+    useGSAP(() => {
+        const tl=gsap.timeline()
+        tl.from(".projectHeading", {
+            y: 100,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".projectHeading",
+                start: "top 80%",
+                scrub: 2,
+                end: 'top 50%'
+            }
+        })
+        tl.from(".project", {
+            y: 100,
+            opacity: 0,
+            duration: 1,
+            stagger: .4,
+            scrollTrigger: {
+                trigger: ".project",
+                start: "top 80%",
+                scrub: 2,
+                end: 'top 40%'
+            }
+        })
+    })
+
     return (
         <div id={id} className='overflow-hidden min-h-screen  w-screen flex flex-col justify-center  items-center bg-[#313849]' >
-            <h1 className='text-3xl text-white md:text-[4vw] font-bold text-center py-10' >Our <span className='text-center text-[#00d8ff]' >Projects</span></h1>
+            <h1 className='text-3xl projectHeading text-white md:text-[4vw] font-bold text-center py-10' >Our <span className='text-center text-[#00d8ff]' >Projects</span></h1>
             <div className='flex flex-wrap flex-col mx-5 md:mx-0 md:flex-row gap-5' >
-                <div onClick={() => navigate('https://foreverfrontend-phi.vercel.app/')} className="w-[90vw] group relative mx-auto h-[25vh] md:w-[30vw] md:h-[30vh] text-white rounded-md overflow-hidden">
+                <div onClick={() => navigate('https://foreverfrontend-phi.vercel.app/')} className="project w-[90vw] group relative mx-auto h-[25vh] md:w-[30vw] md:h-[30vh] text-white rounded-md overflow-hidden">
                     <img
                         className="w-full h-full object-cover object-top rounded-md transition-transform duration-200 group-hover:scale-105 cursor-pointer"
                         src={assets.project1}
@@ -36,7 +67,7 @@ const Projects = ({id}) => {
                     </div>
 
                 </div>
-                <div onClick={() => navigate('https://doctorfrontend-eight.vercel.app/')} className="w-[90vw] group relative mx-auto h-[25vh] md:w-[30vw] md:h-[30vh] text-white rounded-md overflow-hidden">
+                <div onClick={() => navigate('https://doctorfrontend-eight.vercel.app/')} className="project w-[90vw] group relative mx-auto h-[25vh] md:w-[30vw] md:h-[30vh] text-white rounded-md overflow-hidden">
 
                     <img
                         className="w-full h-full object-cover object-top rounded-md transition-transform duration-200 group-hover:scale-105 cursor-pointer"
@@ -60,13 +91,13 @@ const Projects = ({id}) => {
                     >
                         <h1 className="text-center text-2xl">Doctor Appointment Booking App</h1>
                         <h1 className="text-center">A web app for booking appointments of doctors</h1>
-                         <div className='flex justify-center' >
+                        <div className='flex justify-center' >
                             <a className='bg-red-600 pointer-events-auto px-5 py-1 rounded-md mt-5' target='_blank' href="https://doctorfrontend-eight.vercel.app/">open it </a>
                         </div>
                     </div>
 
                 </div>
-                <div onClick={() => navigate('https://blog-application-six-rust.vercel.app/')} className="w-[90vw]  group relative mx-auto h-[25vh] md:w-[30vw] md:h-[30vh] text-white rounded-md overflow-hidden">
+                <div onClick={() => navigate('https://blog-application-six-rust.vercel.app/')} className="project w-[90vw]  group relative mx-auto h-[25vh] md:w-[30vw] md:h-[30vh] text-white rounded-md overflow-hidden">
 
                     <img
                         className="w-full h-full object-cover object-top rounded-md transition-transform duration-200 group-hover:scale-105 cursor-pointer"
@@ -81,7 +112,7 @@ const Projects = ({id}) => {
       p-5
       bg-linear-to-b from-[#006071] to-[#00d9ff51]
       opacity-0
-      translate-y-full
+      translate-y-full`
       transition-all duration-300
       group-hover:opacity-100
       group-hover:translate-y-0
@@ -90,12 +121,12 @@ const Projects = ({id}) => {
                     >
                         <h1 className="text-center text-2xl">Blog Application</h1>
                         <h1 className="text-center">A Blog application</h1>
-                         <div className='flex justify-center' >
+                        <div className='flex justify-center' >
                             <a className='bg-red-600 pointer-events-auto px-5 py-1 rounded-md mt-5' target='_blank' href="https://blog-application-six-rust.vercel.app/">open it </a>
                         </div>
                     </div>
                 </div>
-                <div onClick={() => navigate('https://agencywebsite-five.vercel.app/')} className="w-[90vw]  group relative mx-auto h-[25vh] md:w-[30vw] md:h-[30vh] text-white rounded-md overflow-hidden">
+                <div onClick={() => navigate('https://agencywebsite-five.vercel.app/')} className="project w-[90vw]  group relative mx-auto h-[25vh] md:w-[30vw] md:h-[30vh] text-white rounded-md overflow-hidden">
 
                     <img
                         className="w-full h-full object-cover object-top rounded-md transition-transform duration-200 group-hover:scale-105 cursor-pointer"
@@ -119,7 +150,7 @@ const Projects = ({id}) => {
                     >
                         <h1 className="text-center text-2xl">Blog Application</h1>
                         <h1 className="text-center">A Blog application</h1>
-                         <div className='flex justify-center' >
+                        <div className='flex justify-center' >
                             <a className='bg-red-600 pointer-events-auto px-5 py-1 rounded-md mt-5' target='_blank' href="https://blog-application-six-rust.vercel.app/">open it </a>
                         </div>
                     </div>
