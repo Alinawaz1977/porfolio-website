@@ -16,19 +16,13 @@ const Navbar = () => {
             opacity: 0,
             duration: .5
         })
-        tl.from(".navLinks",{
-            y:-50,
-            opacity:0,
-            stagger:.1,
-            duration:1,
-            ease:"power2.out"
-        })
-        gsap.from(".menu",{
-            y:-50,
-            opacity:0,
-            stagger:.1,
-            duration:1,
-            ease:"power2.out"
+
+        gsap.from(".menu", {
+            y: -50,
+            opacity: 0,
+            stagger: .1,
+            duration: 1,
+            ease: "power2.out"
         })
     })
     return (
@@ -44,7 +38,17 @@ const Navbar = () => {
                     <button className='navLinks cursor-pointer' onClick={() => handleScroll("projects")}>Projects</button>
                     <button className='navLinks cursor-pointer' onClick={() => handleScroll("contact")}>Contact</button>
                 </div>
-                <div onClick={() => setmenu(true)} className='md:hidden menu flex flex-col gap-2' >
+                <div onClick={() => {
+                    
+                    gsap.from(".navLinks", {
+                        y: -50,
+                        opacity: 0,
+                        stagger: .1,
+                        duration: 1,
+                        ease: "power2.out"
+                    })
+                    setmenu(true)
+                }} className='md:hidden menu flex flex-col gap-2' >
                     <div className='w-7 h-0.5 bg-white ' ></div>
                     <div className='w-7 h-0.5 bg-white ' ></div>
                     <div className='w-7 h-0.5 bg-white ' ></div>
